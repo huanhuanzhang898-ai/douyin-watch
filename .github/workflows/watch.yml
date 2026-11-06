@@ -24,7 +24,7 @@ jobs:
           python-version: "3.12"
 
       - name: 安装依赖
-        run: pip install playwright==1.48.2
+        run: pip install playwright==1.64.1
 
       - name: 检查更新
         env:
