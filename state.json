@@ -21,8 +21,8 @@
    "7702313311761726053",
    "7702310289241664229"
   ],
-  "fails": 2,
-  "alerted": false,
+  "fails": 3,
+  "alerted": true,
   "name": "小宫总"
  },
  "MS4wLjABAAAApdql_In6mY-UvG0nEU6wqQo5GyYeIKTDHZr-MDWiK-lCV7Rpk_YvW_DnPwVRL2KS": {
@@ -52,7 +52,7 @@
    "7703906184034045541",
    "7703843453800676219"
   ],
-  "fails": 1,
+  "fails": 0,
   "alerted": false,
   "name": "全职股民小海"
  },
@@ -80,7 +80,7 @@
    "7699681780400649826",
    "7699507023986335695"
   ],
-  "fails": 1,
+  "fails": 0,
   "alerted": false,
   "name": "布鲁斯的金融宝藏"
  }
