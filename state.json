@@ -1,6 +1,7 @@
 {
  "MS4wLjABAAAALUbQzC01A-tSKA3xRbFMY6pHro0LUdHs8A7kb1zTRTt17Mj2OOB7obOO4xe3QDn0": {
   "seen": [
+   "7705260871114794234",
    "7703142660039648101",
    "7704977434937015030",
    "7704873018644812729",
@@ -20,8 +21,8 @@
    "7702313311761726053",
    "7702310289241664229"
   ],
-  "fails": 3,
-  "alerted": true,
+  "fails": 0,
+  "alerted": false,
   "name": "小宫总"
  },
  "MS4wLjABAAAApdql_In6mY-UvG0nEU6wqQo5GyYeIKTDHZr-MDWiK-lCV7Rpk_YvW_DnPwVRL2KS": {
@@ -49,7 +50,7 @@
    "7703906184034045541",
    "7703843453800676219"
   ],
-  "fails": 0,
+  "fails": 1,
   "alerted": false,
   "name": "全职股民小海"
  },
@@ -76,7 +77,7 @@
    "7699681780400649826",
    "7699507023986335695"
   ],
-  "fails": 0,
+  "fails": 1,
   "alerted": false,
   "name": "布鲁斯的金融宝藏"
  }
