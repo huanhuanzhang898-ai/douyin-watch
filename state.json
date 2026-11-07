@@ -21,12 +21,13 @@
    "7702313311761726053",
    "7702310289241664229"
   ],
-  "fails": 3,
-  "alerted": true,
+  "fails": 0,
+  "alerted": false,
   "name": "小宫总"
  },
  "MS4wLjABAAAApdql_In6mY-UvG0nEU6wqQo5GyYeIKTDHZr-MDWiK-lCV7Rpk_YvW_DnPwVRL2KS": {
   "seen": [
+   "7705389128917257403",
    "7705326078635012473",
    "7705261036291803899",
    "7705017179657374373",
