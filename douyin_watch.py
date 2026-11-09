@@ -282,7 +282,7 @@ def notify_new_video(name, v, key):
         return
     save_transcript(name, v, text, ops, source, sentences)
     push(f"{name} · {t}",
-         f"**{name}** · {t}\n\n{ops}\n\n文案：{desc}\n\n{link}")
+         f"**{name}** · {t}\n\n{ops}\n\n---\n\n**原话（机器转写，未校对）**\n\n{text}\n\n{link}")
 
 
 # ---------------- 主流程 ----------------
