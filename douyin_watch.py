@@ -31,6 +31,11 @@ FAIL_ALERT_AFTER = 3        # 连续失败几次后提醒你（通常是 Cookie 
 UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36")
 
+# 只监控这些博主（主页链接里 /user/ 后面那串）。留空 = 监控 DOUYIN_USERS 里的所有人
+ONLY_USERS = {
+    "MS4wLjABAAAApdql_In6mY-UvG0nEU6wqQo5GyYeIKTDHZr-MDWiK-lCV7Rpk_YvW_DnPwVRL2KS",  # 全职股民小海
+}
+
 DASHSCOPE = "https://dashscope.aliyuncs.com"
 ASR_MODEL = "paraformer-v2"
 LLM_MODEL = "qwen-plus"
@@ -305,6 +310,9 @@ def main():
 
         for url in users:
             k = user_key(url)
+            if ONLY_USERS and k not in ONLY_USERS:
+                print("[跳过]", k[:20], "不在 ONLY_USERS 名单里")
+                continue
             s = state.setdefault(k, {"seen": [], "fails": 0, "alerted": False, "name": ""})
             try:
                 nickname, videos = fetch_user_videos(context, url)
