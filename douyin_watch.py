@@ -247,6 +247,11 @@ def fetch_user_videos(context, url):
                 page.mouse.wheel(0, 1500)   # 滚一下，触发加载
         if not captured:
             page.screenshot(path="debug.png", full_page=False)
+            try:
+                body = page.inner_text("body")[:300].replace("\n", " ")
+            except Exception:
+                body = "(读不到正文)"
+            print("[诊断] 网址:", page.url, "| 标题:", page.title(), "| 正文:", body)
             return None, None
         videos, nickname = [], ""
         for data in captured:
