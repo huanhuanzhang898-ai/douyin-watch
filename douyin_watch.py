@@ -245,6 +245,15 @@ def fetch_user_videos(context, url):
             page.wait_for_timeout(1000)
             if _ == 8:
                 page.mouse.wheel(0, 1500)   # 滚一下，触发加载
+        if not captured:                    # 没加载出来就刷新一次再等
+            print("[重试] 第一次没拿到作品列表，刷新页面再试")
+            page.reload(wait_until="domcontentloaded", timeout=45000)
+            for _ in range(20):
+                if captured:
+                    break
+                page.wait_for_timeout(1000)
+                if _ == 6:
+                    page.mouse.wheel(0, 1500)
         if not captured:
             page.screenshot(path="debug.png", full_page=False)
             try:
